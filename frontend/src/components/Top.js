@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Logo from "../assets/img/placeholder_100.png";
+import Navbar from './Navbar';
 
 export default class Top extends Component{
     render(){
@@ -11,6 +12,7 @@ export default class Top extends Component{
                 <div className="top">
                     <h1>GSpons</h1>
                 </div>
+                <Navbar />
             </div>
         );
     }

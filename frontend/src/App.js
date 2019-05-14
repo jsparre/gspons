@@ -9,14 +9,14 @@ import Dominik from './components/Dominik';
 import Home from './components/Home';
 import Julia from './components/Julia';
 import Photos from './components/Photos';
-import Navbar from './components/Navbar';
+import Top from './components/Top';
 
 class App extends Component{
   render(){
     return(
       <React.Fragment>
         <HashRouter>
-          <Navbar />
+          <Top />
         
           <Route exact path="/" component={Home} />
           <Route path="/dominik" component={Dominik} />
