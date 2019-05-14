@@ -1,0 +1,33 @@
+{
+  "connection": "default",
+  "collectionName": "contents",
+  "info": {
+    "name": "content",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "text": {
+      "type": "text",
+      "minLength": 500,
+      "required": true
+    },
+    "date": {
+      "type": "date"
+    }
+  }
+}
